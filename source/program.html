@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Подбор программы</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img
+          src="../source/img/logo-desktop.svg"
+          width="202"
+          height="59"
+          alt="Функциональное питание для котов Cat Energy"
+        />
+      </a>
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="navigation__wrapper">
+          <ul class="navigation-list">
+            <li>
+              <a href="index.html" class="navigation__link"> Главная </a>
+            </li>
+            <li>
+              <a href="catalog.html" class="navigation__link">
+                Каталог продукции
+              </a>
+            </li>
+            <li>
+              <a class="navigation__link navigation__link--current">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="program-main">
+      <section class="form">
+        <h1 class="form__title">Подбор программы</h1>
+        <p class="form__text">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+        <form action="get">
+          <label for="name">
+            имя:*
+            <input
+              type="text"
+              id="name"
+              placeholder="Барсик"
+              name="name"
+              required
+            />
+          </label>
+          <label for="weight">
+            Вес (кг):*
+            <input
+              type="text"
+              id="weight"
+              placeholder="7"
+              name="weight"
+              required
+            />
+          </label>
+          <label for="age">
+            Возраст (лет):
+            <input type="text" id="age" placeholder="7" name="age" />
+          </label>
+          <div class="program-goal">
+            <label for="lose-weight">
+              <input type="radio" id="lose-weight" name="lose-weight" checked />
+              похудение
+            </label>
+            <label for="weight-gain">
+              <input type="radio" id="weiht-gain" name="weiht-gain" />
+              Набор массы
+            </label>
+            <label for="help">
+              <input type="radio" id="help" name="help" />
+              Не знаю (Нужен ваш совет)
+            </label>
+          </div>
+          <h2 class="form__subtitle">Контактные данные (владельца кота)</h2>
+          <label for="email">
+            E-mail:*
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="кuklachev@gmail.com"
+              required
+            />
+          </label>
+          <label for="phone">
+            Телефон:*
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="8 (960) 900-60-90"
+              required
+            />
+          </label>
+          <h2 class="form__subtitle">Комментарий</h2>
+          <label for="about-cat">
+            <textarea
+              placeholder="Расскажите обо всех повадках кота"
+              name="about-cat"
+              id="about-cat"
+              cols="120"
+              rows="10"
+            ></textarea>
+          </label>
+          <h2 class="form__subtitle">Дополнительно</h2>
+          <div class="additionaly">
+            <label for="sugar">
+              <input type="checkbox" id="sugar" name="sugar" checked />
+              сахарозаменитель
+            </label>
+            <label for="water">
+              <input type="checkbox" id="water" name="water" />
+              питьевая вода
+            </label>
+            <label for="milk">
+              <input type="checkbox" id="milk" name="milk" />
+              молоко
+            </label>
+            <label for="vitamins">
+              <input type="checkbox" id="vitamins" name="vitamins" />
+              витамины
+            </label>
+          </div>
+          <button type="submit">отправить заявку</button>
+          <p class="form__info">* — Обязательные поля</p>
+        </form>
+      </section>
+      <section class="location">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <img
+          class="map"
+          src="../source/img/map.png"
+          width="1440"
+          height="400"
+          alt="Карта с указанием месторасположения Cat Energy."
+        />
+        <div class="adress">
+          <p class="adress__slogan">приглашаем к сотрудничеству дилеров!</p>
+          <p class="adress__text">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="adress__text">Санкт-Петербург</p>
+        </div>
+        <img
+          class="map-pin"
+          src="../source/img/map-pin.svg"
+          width="113"
+          height="106"
+          alt="Флажок, указывающий местоположение Cat Energy."
+        />
+      </section>
+    </main>
+    <footer class="page-footer">
+      <img
+        class="footer__logo"
+        src="../source/img/footer-logo.svg"
+        width="128"
+        height="24"
+        alt="Логотип Cat Energy."
+      />
+      <section class="socials">
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social__link">
+              <img
+                class="social__logo"
+                src="../source/img/vk-icon.svg"
+                width="30"
+                height="22"
+                alt="Логотип вк."
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social__link">
+              <img
+                src="../source/img/insta-icon.svg"
+                width="23"
+                height="23"
+                alt="Логотип инстаграм."
+                class="social__logo"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social__link">
+              <img
+                src="../source/img/facebook-icon.svg"
+                width="28"
+                height="33"
+                alt="Логотип facebook."
+                class="social__logo"
+              />
+            </a>
+          </li>
+        </ul>
+        <div class="academy">
+          <p class="academy__logo">HTML Academy</p>
+          <img
+            class="academy__logo"
+            src="../source/img/html-logo.svg"
+            width="27"
+            height="34"
+            alt="Логотип HTML академии."
+          />
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
