@@ -6,7 +6,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
+      <a class="page-header__logo">
         <img
           src="../source/img/logo-desktop.svg"
           width="202"
@@ -18,32 +18,30 @@
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="navigation__wrapper">
-          <ul class="navigation-list">
-            <li>
-              <a class="navigation__link navigation__link--current">
-                Главная
-              </a>
-            </li>
-            <li>
-              <a href="catalog.html" class="navigation__link">
-                Каталог продукции
-              </a>
-            </li>
-            <li>
-              <a href="program.html" class="navigation__link">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navigation-list">
+          <li>
+            <a class="navigation__link navigation__link--current">
+              Главная
+            </a>
+          </li>
+          <li>
+            <a href="catalog.html" class="navigation__link">
+              Каталог продукции
+            </a>
+          </li>
+          <li>
+            <a href="program.html" class="navigation__link">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
       <section class="preview">
         <h1 class="preview__title">Функциональное питание для котов</h1>
         <p class="preview__text">Занялся собой? Займись котом!</p>
-        <button class="button">подобрать программу</button>
+        <button class="button preview__button">подобрать программу</button>
         <img
           class="preview__image"
           src="../source/img/preview__image.png"
@@ -166,26 +164,26 @@
         </div>
       </section>
       <section class="example">
+        <h2 class="example__title">Живой пример</h2>
         <div class="example__wrapper">
-          <h2 class="example__title">Живой пример</h2>
           <p class="example__text">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
             Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
             этом он не менял своих привычек и по-прежнему спит по 16 часов в
             день.
           </p>
-        </div>
-        <div class="numbers">
-          <div class="example-info">
-            <p class="example-info__text">5 кг</p>
-            <p class="example-info__text">снижение веса</p>
+          <div class="numbers">
+            <div class="example-info">
+              <p class="example-info__text">5 кг</p>
+              <p class="example-info__text">снижение веса</p>
+            </div>
+            <div class="example-info">
+              <p class="example-info__text">60 дней</p>
+              <p class="example-info__text">затрачено времени</p>
+            </div>
+            <p class="numbers__text">Затраты на питание:</p>
+            <p class="numbers__text">15 000 РУБ.</p>
           </div>
-          <div class="example-info">
-            <p class="example-info__text">60 дней</p>
-            <p class="example-info__text">затрачено времени</p>
-          </div>
-          <p class="numbers__text">Затраты на питание:</p>
-          <p class="numbers__text">15 000 РУБ.</p>
         </div>
         <img
           src="../source/img/example__image.png"
@@ -194,8 +192,9 @@
           alt="Кот, наполовину толстый наполовину худой."
         />
         <div class="toggle">
-          <button class="toggle__button-left">было</button>
-          <button class="toggle__button-right">стало</button>
+          <p class="toggle__left">было</p>
+          <input type="range">
+          <p class="toggle__right">стало</p>
         </div>
       </section>
       <section class="location">
@@ -207,10 +206,10 @@
           height="400"
           alt="Карта с указанием месторасположения Cat Energy."
         />
-        <div class="adress">
-          <p class="adress__slogan">приглашаем к сотрудничеству дилеров!</p>
-          <p class="adress__text">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="adress__text">Санкт-Петербург</p>
+        <div class="address">
+          <p class="address__slogan">приглашаем к сотрудничеству дилеров!</p>
+          <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="address__text">Санкт-Петербург</p>
         </div>
         <img
           class="map-pin"
@@ -265,7 +264,7 @@
             </a>
           </li>
         </ul>
-        <div class="academy">
+        <a class="academy" href="https://htmlacademy.ru" target="_blank">
           <p class="academy__logo">HTML Academy</p>
           <img
             class="academy__logo"
@@ -274,7 +273,7 @@
             height="34"
             alt="Логотип HTML академии."
           />
-        </div>
+        </a>
       </section>
     </footer>
   </body>
