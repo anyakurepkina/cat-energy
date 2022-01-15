@@ -43,7 +43,7 @@
         <p class="form__text">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
-        <form action="get">
+        <form action="post">
           <label for="name">
             имя:*
             <input
@@ -64,71 +64,68 @@
               required
             />
           </label>
-          <label for="age">
+          <label>
             Возраст (лет):
-            <input type="text" id="age" placeholder="7" name="age" />
+            <input type="text" placeholder="7" name="age" />
           </label>
           <div class="program-goal">
-            <label for="lose-weight">
-              <input type="radio" id="lose-weight" name="lose-weight" checked />
+            <label>
+              <input type="radio" name="lose-weight" checked />
               похудение
             </label>
-            <label for="weight-gain">
-              <input type="radio" id="weiht-gain" name="weiht-gain" />
+            <label>
+              <input type="radio" name="weiht-gain" />
               Набор массы
             </label>
-            <label for="help">
-              <input type="radio" id="help" name="help" />
+            <label>
+              <input type="radio" name="help" />
               Не знаю (Нужен ваш совет)
             </label>
           </div>
           <h2 class="form__subtitle">Контактные данные (владельца кота)</h2>
-          <label for="email">
+          <label>
             E-mail:*
             <input
               type="email"
-              id="email"
               name="email"
               placeholder="кuklachev@gmail.com"
               required
             />
           </label>
-          <label for="phone">
+          <label>
             Телефон:*
             <input
               type="tel"
-              id="phone"
               name="phone"
               placeholder="8 (960) 900-60-90"
               required
             />
           </label>
           <h2 class="form__subtitle">Комментарий</h2>
-          <label for="about-cat">
+          <label>
             <textarea
               placeholder="Расскажите обо всех повадках кота"
               name="about-cat"
-              id="about-cat"
               cols="120"
               rows="10"
             ></textarea>
           </label>
           <h2 class="form__subtitle">Дополнительно</h2>
           <div class="additionaly">
-            <label for="sugar">
-              <input type="checkbox" id="sugar" name="sugar" checked />
+            <label>
+              <input type="checkbox" name="sugar" checked />
               сахарозаменитель
             </label>
-            <label for="water">
-              <input type="checkbox" id="water" name="water" />
+            <label>
+              <input type="checkbox" name="water" />
               питьевая вода
             </label>
-            <label for="milk">
-              <input type="checkbox" id="milk" name="milk" />
+            <label>
+              <input type="checkbox" name="milk" />
               молоко
             </label>
-            <label for="vitamins">
-              <input type="checkbox" id="vitamins" name="vitamins" />
+            <label>
+              <input type="checkbox" name="vitamins" />
               витамины
             </label>
           </div>
@@ -145,10 +142,10 @@
           height="400"
           alt="Карта с указанием месторасположения Cat Energy."
         />
-        <div class="adress">
-          <p class="adress__slogan">приглашаем к сотрудничеству дилеров!</p>
-          <p class="adress__text">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="adress__text">Санкт-Петербург</p>
+        <div class="address">
+          <p class="address__slogan">приглашаем к сотрудничеству дилеров!</p>
+          <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="address__text">Санкт-Петербург</p>
         </div>
         <img
           class="map-pin"
@@ -203,7 +200,7 @@
             </a>
           </li>
         </ul>
-        <div class="academy">
+        <a class="academy" href="https://htmlacademy.ru" target="_blank">
           <p class="academy__logo">HTML Academy</p>
           <img
             class="academy__logo"
@@ -212,7 +209,7 @@
             height="34"
             alt="Логотип HTML академии."
           />
-        </div>
+        </a>
       </section>
     </footer>
   </body>
