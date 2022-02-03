@@ -2,13 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Cat Energy</title>
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__link">
         <img
-          src="../source/img/logo-desktop.svg"
+          class="page-header__logo"
+          src="/img/logo-desktop.svg"
           width="202"
           height="59"
           alt="Функциональное питание для котов Cat Energy"
@@ -20,9 +22,7 @@
         </button>
         <ul class="navigation-list">
           <li>
-            <a class="navigation__link navigation__link--current">
-              Главная
-            </a>
+            <a class="navigation__link navigation__link--current"> Главная </a>
           </li>
           <li>
             <a href="catalog.html" class="navigation__link">
@@ -39,23 +39,30 @@
     </header>
     <main class="page-main">
       <section class="preview">
-        <h1 class="preview__title">Функциональное питание для котов</h1>
-        <p class="preview__text">Занялся собой? Займись котом!</p>
-        <button class="button preview__button">подобрать программу</button>
-        <img
-          class="preview__image"
-          src="../source/img/preview__image.png"
-          width="552"
-          height="499"
-          alt="Оранжевая упаковка корма со вкусом курицы."
-        />
+        <div class="container preview__wrapper">
+          <div class="preview__left">
+            <h1 class="preview__title">Функциональное питание для котов</h1>
+            <p class="preview__text">Занялся собой? Займись котом!</p>
+            <a href="/program.html" class="button preview__button"
+              >подобрать программу</a
+            >
+          </div>
+          <img
+            class="preview__image"
+            src="/img/preview__image.png"
+            width="552"
+            height="499"
+            alt="Оранжевая упаковка корма со вкусом курицы."
+          />
+        </div>
+        <div class="preview__background"></div>
       </section>
       <section class="goal">
-        <div class="goal__wrapper">
+        <div class="container goal__wrapper">
           <h2 class="visually-hidden">Цель плана питания</h2>
           <div class="goal-card goal__card">
             <img
-              src="../source/img/goal__image-one.svg"
+              src="/img/goal__image-one.svg"
               width="100"
               height="106"
               alt="Сидящий черный кот на зеленом фоне."
@@ -71,7 +78,7 @@
               каталог slim
               <img
                 class="arrow"
-                src="../source/img/icon_arrow.svg"
+                src="/img/icon_arrow.svg"
                 width="32"
                 height="10"
                 alt="Стрелка вправо."
@@ -80,7 +87,7 @@
           </div>
           <div class="goal-card goal__card">
             <img
-              src="../source/img/goal__image-two.svg"
+              src="/img/goal__image-two.svg"
               width="134"
               height="100"
               alt="Идущий черный кот на зеленом фоне."
@@ -95,7 +102,7 @@
               каталог pro
               <img
                 class="arrow"
-                src="../source/img/icon_arrow.svg"
+                src="/img/icon_arrow.svg"
                 width="32"
                 height="10"
                 alt="Стрелка вправо."
@@ -111,7 +118,7 @@
             <li class="about__item">
               <img
                 class="about__image"
-                src="../source/img/about-one.svg"
+                src="/img/about-one.svg"
                 width="30"
                 height="32"
                 alt="Белый лист дерева на зеленом фоне."
@@ -124,7 +131,7 @@
             <li class="about__item">
               <img
                 class="about__image"
-                src="../source/img/about-two.svg"
+                src="/img/about-two.svg"
                 width="29"
                 height="31"
                 alt="Емкость с содержимым на зеленом фоне."
@@ -137,7 +144,7 @@
             <li class="about__item">
               <img
                 class="about__image"
-                src="../source/img/about-three.svg"
+                src="/img/about-three.svg"
                 width="25"
                 height="30"
                 alt="Столовые приборы на зеленом фоне."
@@ -150,7 +157,7 @@
             <li class="about__item">
               <img
                 class="about__image"
-                src="../source/img/about-four.svg"
+                src="/img/about-four.svg"
                 width="32"
                 height="33"
                 alt="Будильник на зеленом фоне."
@@ -186,14 +193,14 @@
           </div>
         </div>
         <img
-          src="../source/img/example__image.png"
+          src="/img/example__image.png"
           width="690"
           height="656"
           alt="Кот, наполовину толстый наполовину худой."
         />
         <div class="toggle">
           <p class="toggle__left">было</p>
-          <input type="range">
+          <input type="range" />
           <p class="toggle__right">стало</p>
         </div>
       </section>
@@ -201,7 +208,7 @@
         <h2 class="visually-hidden">Как нас найти</h2>
         <img
           class="map"
-          src="../source/img/map.png"
+          src="/img/map.png"
           width="1440"
           height="400"
           alt="Карта с указанием месторасположения Cat Energy."
@@ -213,7 +220,7 @@
         </div>
         <img
           class="map-pin"
-          src="../source/img/map-pin.svg"
+          src="/img/map-pin.svg"
           width="113"
           height="106"
           alt="Флажок, указывающий местоположение Cat Energy."
@@ -223,7 +230,7 @@
     <footer class="page-footer">
       <img
         class="footer__logo"
-        src="../source/img/footer-logo.svg"
+        src="/img/footer-logo.svg"
         width="128"
         height="24"
         alt="Логотип Cat Energy."
@@ -234,7 +241,7 @@
             <a href="#" class="social__link">
               <img
                 class="social__logo"
-                src="../source/img/vk-icon.svg"
+                src="/img/vk-icon.svg"
                 width="30"
                 height="22"
                 alt="Логотип вк."
@@ -244,7 +251,7 @@
           <li>
             <a href="#" class="social__link">
               <img
-                src="../source/img/insta-icon.svg"
+                src="/img/insta-icon.svg"
                 width="23"
                 height="23"
                 alt="Логотип инстаграм."
@@ -255,7 +262,7 @@
           <li>
             <a href="#" class="social__link">
               <img
-                src="../source/img/facebook-icon.svg"
+                src="/img/facebook-icon.svg"
                 width="28"
                 height="33"
                 alt="Логотип facebook."
@@ -268,7 +275,7 @@
           <p class="academy__logo">HTML Academy</p>
           <img
             class="academy__logo"
-            src="../source/img/html-logo.svg"
+            src="/img/html-logo.svg"
             width="27"
             height="34"
             alt="Логотип HTML академии."

@@ -1,0 +1,78 @@
+.preview {
+  position: relative;
+  width: 100%;
+  height: 694px;
+}
+
+.preview__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("/img/cat-background.jpg");
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.preview__background::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: var(--background-green);
+}
+
+.preview__wrapper {
+  width: 920px;
+  max-width: 100%;
+  margin-left: 190px;
+  padding-top: 140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.preview__left {
+  grid-column: 1 / 2;
+}
+
+.preview__image {
+  grid-column: 2 / 3;
+  transform: translateX(-46px);
+  z-index: 1;
+}
+
+.preview__title {
+  width: 414px;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.preview__text {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 52px;
+}
+
+.button {
+  padding: 0.7em 1.3em;
+  background-color: var(--basic-green);
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 20px;
+  line-height: 1;
+}
+
+.button:hover {
+  background-color: var(--basic-green-hover);
+}
+
+.button:active {
+  background-color: var(--basic-green-hover);
+  color: rgba(255, 255, 255, 0.3);
+}
