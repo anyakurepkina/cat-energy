@@ -16,14 +16,14 @@
 .page-header__logo {
   width: auto;
   height: 100%;
-}
 
-.page-header__logo:hover {
-  opacity: 0.8;
-}
+  &:hover {
+    opacity: 0.8;
+  }
 
-.page-header__logo:active {
-  opacity: 0.6;
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .navigation-list {
@@ -39,20 +39,20 @@
 
 .navigation__link {
   color: var(--white);
-}
 
-.navigation__link:hover {
-  opacity: 0.6;
-}
+  &:hover {
+    opacity: 0.6;
+  }
 
-.navigation__link:active {
-  opacity: 0.3;
-}
+  &:active {
+    opacity: 0.3;
+  }
 
-.navigation__link--current {
-  text-decoration: underline;
-  text-underline-offset: 12px;
-  text-decoration-thickness: 2px;
+  &--current {
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 2px;
+  }
 }
 
 .navigation__toggle {
