@@ -1,0 +1,21 @@
+.example__title {
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 400;
+  padding-bottom: 76px;
+}
+
+.example__background {
+  background-color: var(--light-grey);
+}
+
+.example__text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  padding-top: 70px;
+  padding-bottom: 69px;
+  grid-column: 1 / 2;
+}
+
+.numbers {
+  grid-column: 1 / 2;
+}

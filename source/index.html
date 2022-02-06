@@ -179,37 +179,39 @@
         </div>
       </section>
       <section class="example">
-        <h2 class="example__title">Живой пример</h2>
-        <div class="example__wrapper">
-          <p class="example__text">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-            этом он не менял своих привычек и по-прежнему спит по 16 часов в
-            день.
-          </p>
-          <div class="numbers">
-            <div class="example-info">
-              <p class="example-info__text">5 кг</p>
-              <p class="example-info__text">снижение веса</p>
+        <h2 class="example__title container">Живой пример</h2>
+        <div class="example__background">
+          <div class="container example__wrapper">
+            <p class="example__text">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов
+              в день.
+            </p>
+            <div class="numbers">
+              <div class="example-info">
+                <p class="example-info__text">5 кг</p>
+                <p class="example-info__text">снижение веса</p>
+              </div>
+              <div class="example-info">
+                <p class="example-info__text">60 дней</p>
+                <p class="example-info__text">затрачено времени</p>
+              </div>
+              <p class="numbers__text">Затраты на питание:</p>
+              <p class="numbers__text">15 000 РУБ.</p>
             </div>
-            <div class="example-info">
-              <p class="example-info__text">60 дней</p>
-              <p class="example-info__text">затрачено времени</p>
+            <img
+              src="/img/example__image.png"
+              width="690"
+              height="656"
+              alt="Кот, наполовину толстый наполовину худой."
+            />
+            <div class="toggle">
+              <p class="toggle__left">было</p>
+              <input type="range" />
+              <p class="toggle__right">стало</p>
             </div>
-            <p class="numbers__text">Затраты на питание:</p>
-            <p class="numbers__text">15 000 РУБ.</p>
           </div>
-        </div>
-        <img
-          src="/img/example__image.png"
-          width="690"
-          height="656"
-          alt="Кот, наполовину толстый наполовину худой."
-        />
-        <div class="toggle">
-          <p class="toggle__left">было</p>
-          <input type="range" />
-          <p class="toggle__right">стало</p>
         </div>
       </section>
       <section class="location">
@@ -235,15 +237,15 @@
         />
       </section>
     </main>
-    <footer class="page-footer">
-      <img
-        class="footer__logo"
-        src="/img/footer-logo.svg"
-        width="128"
-        height="24"
-        alt="Логотип Cat Energy."
-      />
-      <section class="socials">
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <img
+          class="footer__logo"
+          src="/img/footer-logo.svg"
+          width="128"
+          height="24"
+          alt="Логотип Cat Energy."
+        />
         <ul class="social-list">
           <li>
             <a href="#" class="social__link">
@@ -289,7 +291,7 @@
             alt="Логотип HTML академии."
           />
         </a>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

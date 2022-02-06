@@ -1,0 +1,25 @@
+.footer {
+  background-color: var(--light-grey);
+  padding-top: 57px;
+  padding-bottom: 58px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-list {
+  display: flex;
+  gap: 27px;
+  align-items: center;
+}
+
+.academy {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: var(--grey-about);
+}
