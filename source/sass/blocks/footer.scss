@@ -10,16 +10,58 @@
   align-items: center;
 }
 
+.footer__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .social-list {
   display: flex;
   gap: 27px;
   align-items: center;
 }
 
+.social__link {
+  &:hover {
+    fill: var(--basic-green);
+  }
+
+  &:active {
+    fill: var(--basic-green);
+    opacity: 0.3;
+  }
+}
+
+.social__link--stroke {
+  &:hover {
+    stroke: var(--basic-green);
+    fill: none;
+  }
+
+  &:active {
+    stroke: var(--basic-green);
+    fill: none;
+    opacity: 0.3;
+  }
+}
+
 .academy {
   display: flex;
   align-items: center;
   gap: 22px;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--secondary-font);
   color: var(--grey-about);
+
+  &:hover .social__link {
+    fill: var(--basic-green);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

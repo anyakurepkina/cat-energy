@@ -1,0 +1,47 @@
+.location {
+  position: relative;
+  line-height: 0;
+}
+
+.address {
+  width: 100%;
+  max-width: 570px;
+  position: absolute;
+  display: grid;
+  align-items: center;
+  gap: 87px;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--white);
+  top: 95px;
+  left: 110px;
+  padding-left: 76px;
+  padding-right: 90px;
+  padding-top: 66px;
+  padding-bottom: 51px;
+}
+
+.address__slogan {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.address__text {
+  grid-column: 2 / 3;
+}
+
+.address__street {
+  color: var(--grey-about);
+  font-family: var(--secondary-font);
+  line-height: 1.25em;
+  &:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+.map-pin {
+  position: absolute;
+  left: 908px;
+  top: 131px;
+}
