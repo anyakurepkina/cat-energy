@@ -67,6 +67,8 @@
   color: var(--white);
   font-size: 20px;
   line-height: 1;
+  appearance: none;
+  border: none;
 
   &:hover {
     background-color: var(--basic-green-hover);
