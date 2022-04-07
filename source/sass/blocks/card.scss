@@ -1,10 +1,14 @@
 .card {
   background-color: var(--basic-grey);
+  position: relative;
+  margin-top: 80px;
 }
 
 .card__wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  column-gap: 80px;
+  row-gap: 63px;
 }
 
 .info__wrapper {
@@ -16,6 +20,20 @@
   line-height: 1;
   text-align: center;
   color: var(--grey-info);
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-top: 126px;
+}
+
+.card__image {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &--mini {
+    top: -56px;
+  }
 }
 
 .card__title {
@@ -30,6 +48,7 @@
   color: var(--dark-grey);
   padding-top: 46px;
   padding-bottom: 17px;
+  margin: 0 auto;
 }
 
 .card-info {
@@ -47,5 +66,62 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
-  margin-top: 33px;
+  margin: 33px auto 40px;
+  display: block;
+}
+
+.card-more {
+  border: 2px solid var(--light-grey);
+  width: 245px;
+  margin-top: 80px;
+}
+
+.plus {
+  background: var(--grey-more);
+  height: 60px;
+  width: 2px;
+  position: relative;
+  margin: 51px auto 62px;
+
+  &:after {
+    content: "";
+    height: 2px;
+    width: 60px;
+    background: var(--grey-more);
+    position: absolute;
+    left: -30px;
+    top: 30px;
+  }
+}
+
+.card-more__title {
+  padding: 0;
+  margin-bottom: 23px;
+}
+
+.card-info__more {
+  border: none;
+  margin-bottom: 87px;
+  line-height: 1.12;
+}
+
+.card-more__button {
+  background-color: var(--light-grey);
+  color: var(--grey-info);
+  font-family: oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0px;
+  padding: 20px 39px;
+  margin-bottom: 40px;
+
+  &:hover {
+    background-color: var(--grey-hover);
+  }
+
+  &:active {
+    color: var(--grey-info);
+    opacity: 0.3;
+  }
 }
