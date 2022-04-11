@@ -6,7 +6,7 @@
     <title>Cat Energy</title>
   </head>
   <body class="page__body">
-    <header class="catalog-header">
+    <header class="header--dark">
       <a href="index.html" class="page-header__logo">
         <img
           src="/img/logo-desktop.svg"
@@ -20,21 +20,17 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="navigation__wrapper">
-          <ul class="catalog-navigation-list">
+          <ul class="navigation-list--dark">
             <li>
-              <a href="index.html" class="catalog-navigation__link">
-                Главная
-              </a>
+              <a href="index.html" class="navigation__link--dark"> Главная </a>
             </li>
             <li>
-              <a
-                class="catalog-navigation__link catalog-navigation__link--current"
-              >
+              <a class="navigation__link--dark navigation__link--dark--current">
                 Каталог продукции
               </a>
             </li>
             <li>
-              <a href="program.html" class="catalog-navigation__link">
+              <a href="program.html" class="navigation__link--dark">
                 Подбор программы
               </a>
             </li>
@@ -237,55 +233,39 @@
       </section>
       <section class="additional">
         <div class="container">
-          <h2 class="additional__title">Дополнительные товары</h2>
+          <h2 class="additional__title title">Дополнительные товары</h2>
           <div class="additional__wrapper">
             <table class="additional-products">
               <tbody>
                 <tr class="additional-product">
                   <th class="additional-product__title">Сахарозаменитель</th>
                   <td class="additional-product__text">1 упаковка (100 г)</td>
-                  <td
-                    class="additional-product__text additional-product__price"
-                  >
-                    200 Р.
-                  </td>
-                  <td>
+                  <td class="additional-product__text align-center">200 Р.</td>
+                  <td class="align-right">
                     <button class="button additional-button">заказать</button>
                   </td>
                 </tr>
                 <tr class="additional-product">
                   <th class="additional-product__title">Питьевая вода</th>
                   <td class="additional-product__text">5 литров</td>
-                  <td
-                    class="additional-product__text additional-product__price"
-                  >
-                    50 Р.
-                  </td>
-                  <td>
+                  <td class="additional-product__text align-center">50 Р.</td>
+                  <td class="align-right">
                     <button class="button additional-button">заказать</button>
                   </td>
                 </tr>
                 <tr class="additional-product">
                   <th class="additional-product__title">Молоко</th>
                   <td class="additional-product__text">1 литр</td>
-                  <td
-                    class="additional-product__text additional-product__price"
-                  >
-                    100 Р.
-                  </td>
-                  <td>
+                  <td class="additional-product__text align-center">100 Р.</td>
+                  <td class="align-right">
                     <button class="button additional-button">заказать</button>
                   </td>
                 </tr>
                 <tr class="additional-product">
                   <th class="additional-product__title">Витамины</th>
                   <td class="additional-product__text">1 упаковка (30 г)</td>
-                  <td
-                    class="additional-product__text additional-product__price"
-                  >
-                    300 Р.
-                  </td>
-                  <td>
+                  <td class="additional-product__text align-center">300 Р.</td>
+                  <td class="align-right">
                     <button class="button additional-button">заказать</button>
                   </td>
                 </tr>
@@ -294,10 +274,10 @@
             <div class="gift">
               <img
                 class="gift__image"
-                src="/img/additional-image.png"
-                width="245"
-                height="289"
-                alt="Фотография кота в переноске."
+                src="/img/icon_gift.svg"
+                width="80"
+                height="83"
+                alt="Иконка подарка."
               />
               <p class="gift__text">
                 Закажите все <br />и получите чехол для <br />кота в подарок!
@@ -308,6 +288,17 @@
       </section>
       <section class="location">
         <h2 class="visually-hidden">Как нас найти</h2>
+        <div class="address">
+          <p class="address__slogan">
+            приглашаем <br />
+            к сотрудничеству <br />
+            дилеров!
+          </p>
+          <div class="adress__text">
+            <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="address__street">Санкт-Петербург</p>
+          </div>
+        </div>
         <img
           class="map"
           src="/img/map.png"
@@ -315,11 +306,6 @@
           height="400"
           alt="Карта с указанием месторасположения Cat Energy."
         />
-        <div class="address">
-          <p class="address__slogan">приглашаем к сотрудничеству дилеров!</p>
-          <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="address__text">Санкт-Петербург</p>
-        </div>
         <img
           class="map-pin"
           src="/img/map-pin.svg"
