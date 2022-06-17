@@ -16,8 +16,14 @@
   --dark-grey: #222222;
   --grey-info: #444444;
   --grey-more: #d3d3d3;
+  --grey-divider: #d9d9d9;
   --grey-hover: #ebebeb;
   --grey-border: #e7e7e7;
+  --grey-mobile-border: #e6e6e6;
   --red-error: #ff8282;
   --grey-checkbox: #bababa;
 }
+
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1024px;

@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Cat Energy</title>
   </head>
@@ -16,10 +17,10 @@
           alt="Функциональное питание для котов Cat Energy"
         />
       </a>
+      <button class="navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <nav class="navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
         <ul class="navigation-list">
           <li>
             <a class="navigation__link navigation__link--current"> Главная </a>
@@ -41,7 +42,9 @@
       <section class="preview">
         <div class="container preview__wrapper">
           <div class="preview__left">
-            <h1 class="preview__title">Функциональное питание для котов</h1>
+            <h1 class="preview__title">
+              Функциональное <br />питание для котов
+            </h1>
             <p class="preview__text">Занялся собой? Займись котом!</p>
             <a href="/program.html" class="button preview__button"
               >подобрать программу</a
@@ -54,6 +57,11 @@
             height="499"
             alt="Оранжевая упаковка корма со вкусом курицы."
           />
+          <a
+            href="/program.html"
+            class="button preview__button preview__button--mobile"
+            >подобрать программу</a
+          >
         </div>
         <div class="preview__background"></div>
       </section>
@@ -61,19 +69,22 @@
         <div class="container goal__wrapper">
           <h2 class="visually-hidden">Цель плана питания</h2>
           <div class="goal-card">
-            <img
-              src="/img/goal__image-one.svg"
-              width="100"
-              height="106"
-              alt="Сидящий черный кот на зеленом фоне."
-              class="goal-card__image"
-            />
+            <div class="goal-card__image">
+              <img
+                class="goal-card__image--slim"
+                src="/img/cat-slim.svg"
+                width="36"
+                height="50"
+                alt="Сидящий черный кот."
+              />
+            </div>
             <h3 class="goal-card__title">Похудение</h3>
             <p class="goal-card__text">
               Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
               сбросить лишний вес.
             </p>
+            <div class="goal__divider"></div>
             <a href="catalog.html" class="goal-card__link">
               каталог slim
               <img
@@ -85,19 +96,21 @@
               />
             </a>
           </div>
-          <div class="goal-card">
-            <img
-              src="/img/goal__image-two.svg"
-              width="134"
-              height="100"
-              alt="Идущий черный кот на зеленом фоне."
-              class="goal-card__image"
-            />
+          <div class="goal-card goal-card--pro">
+            <div class="goal-card__image">
+              <img
+                class="goal-card__image--pro"
+                src="/img/cat-pro.svg"
+                width="80px"
+                alt="Идущий черный кот."
+              />
+            </div>
             <h3 class="goal-card__title">набор массы</h3>
             <p class="goal-card__text">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
+            <div class="goal__divider"></div>
             <a href="catalog.html" class="goal-card__link">
               каталог pro
               <img

@@ -35,8 +35,15 @@ body {
   width: 100%;
   max-width: 1260px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px 0;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 20px 0;
+  }
 }
 
 .align-left {
@@ -82,22 +89,33 @@ a {
 }
 
 .button {
-  padding: 0.7em 1.3em;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 0.7em 5.2em;
   background-color: var(--basic-green);
   text-transform: uppercase;
   color: var(--white);
-  font-size: 20px;
-  line-height: 1;
   appearance: none;
   border: none;
   font-family: var(--primary-font);
 
-  &:hover {
-    background-color: var(--basic-green-hover);
-  }
+  @media (min-width: $tablet) {
+    padding: 0.7em 1.3em;
+    font-size: 20px;
+    line-height: 1;
 
-  &:active {
-    background-color: var(--basic-green-hover);
-    color: rgba(255, 255, 255, 0.3);
+    &:hover {
+      background-color: var(--basic-green-hover);
+    }
+
+    &:active {
+      background-color: var(--basic-green-hover);
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
+}
+
+.location,
+footer {
+  display: none;
 }
