@@ -1,16 +1,22 @@
 .footer {
-  background-color: var(--light-grey);
-  padding-top: 57px;
-  padding-bottom: 58px;
+  @media (min-width: $desktop) {
+    background-color: var(--light-grey);
+    padding-top: 57px;
+    padding-bottom: 58px;
+  }
 }
 
 .footer__wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer__logo {
+  margin-top: 39px;
+  margin-bottom: 32px;
+
   &:hover {
     opacity: 0.8;
   }
@@ -20,10 +26,20 @@
   }
 }
 
+.footer__divider {
+  margin: 0;
+}
+
 .social-list {
+  margin: 20px 0;
   display: flex;
-  gap: 27px;
   align-items: center;
+  gap: 35px;
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    gap: 27px;
+  }
 }
 
 .social__link {
@@ -51,17 +67,23 @@
 }
 
 .academy {
+  margin: 22px 0;
+  width: 100%;
   display: flex;
-  align-items: center;
-  gap: 22px;
+  justify-content: space-between;
   font-family: var(--secondary-font);
   color: var(--grey-about);
 
-  &:hover .social__link {
-    fill: var(--basic-green);
-  }
+  @media (min-width: $desktop) {
+    align-items: center;
+    gap: 22px;
 
-  &:active {
-    opacity: 0.3;
+    &:hover .social__link {
+      fill: var(--basic-green);
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

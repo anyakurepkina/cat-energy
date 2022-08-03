@@ -1,47 +1,86 @@
 .location {
   position: relative;
-  line-height: 0;
 }
 
 .address {
   width: 100%;
-  max-width: 570px;
-  position: absolute;
-  display: grid;
-  align-items: center;
-  gap: 87px;
-  grid-template-columns: 1fr 1fr;
-  background-color: var(--white);
-  top: 95px;
-  left: 110px;
-  padding-left: 76px;
-  padding-right: 90px;
-  padding-top: 66px;
-  padding-bottom: 51px;
+  display: flex;
+  padding: 28px 20px;
+
+  @media (min-width: $desktop) {
+    max-width: 570px;
+    position: absolute;
+    display: grid;
+    align-items: center;
+    gap: 87px;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--white);
+    top: 95px;
+    left: 110px;
+    padding: 66px 90px 51px 76px;
+  }
 }
 
 .address__slogan {
+  font-size: 16px;
+  line-height: 1.12;
   text-transform: uppercase;
-  font-size: 20px;
-  line-height: 1.4;
   font-weight: 400;
+  width: 100%;
+  max-width: 140px;
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 
 .address__text {
-  grid-column: 2 / 3;
+  @media (min-width: $desktop) {
+    grid-column: 2 / 3;
+  }
 }
 
 .address__street {
+  width: 100%;
+  max-width: 140px;
+  font-size: 14px;
+  line-height: 1.4;
   color: var(--grey-about);
   font-family: var(--secondary-font);
-  line-height: 1.25em;
-  &:first-child {
-    margin-bottom: 20px;
+
+  @media (min-width: $desktop) {
+    line-height: 1.25em;
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.map--mobile {
+  width: 100%;
+  height: auto;
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.map {
+  display: none;
+  @media (min-width: $desktop) {
+    display: inline;
   }
 }
 
 .map-pin {
+  width: 57px;
+  height: 73px;
   position: absolute;
-  left: 908px;
-  top: 131px;
+  left: 134px;
+  top: 241px;
+
+  @media (min-width: $desktop) {
+    left: 908px;
+    top: 131px;
+  }
 }
