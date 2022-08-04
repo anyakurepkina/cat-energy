@@ -3,13 +3,14 @@
   font-size: 36px;
   line-height: 1.1;
   background-color: var(--light-grey);
-  padding: 27px 0 33px 20px;
+  padding-top: 27px;
+  padding-bottom: 33px;
   margin-top: 42px;
 
   @media (min-width: $tablet) {
-    padding: 0;
-    margin-left: 30px;
-    margin-bottom: 63px;
+    margin-top: 0;
+    padding-top: 43px;
+    padding-bottom: 63px;
     font-size: 60px;
     line-height: 1;
     background: transparent;
@@ -18,8 +19,8 @@
   @media (min-width: $desktop) {
     font-size: 60px;
     line-height: 1;
-    margin: 69px 0 76px;
-    margin-left: 110px;
+    padding-top: 69px;
+    padding-bottom: 76px;
   }
 }
 
@@ -41,6 +42,24 @@
   width: 100%;
   background-color: var(--light-grey);
   padding-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    background-color: var(--white);
+
+    &::before {
+      content: "";
+      background-color: var(--light-grey);
+      position: absolute;
+      bottom: 0;
+      height: 50%;
+      width: 100%;
+      left: 0;
+    }
+  }
+  @media (min-width: $desktop) {
+    background-color: var(--light-grey);
+  }
 }
 
 .example__left {
@@ -136,16 +155,18 @@
   line-height: 1;
   font-size: 12px;
   color: var(--grey-about);
-  background-color: var(--basic-grey);
+  background-color: var(--light-grey);
 
   @media (min-width: $tablet) {
     padding: 11px 9px 0;
     white-space: nowrap;
     font-size: 14px;
+    background-color: var(--white);
   }
 
   @media (min-width: $desktop) {
     padding: 0 7px;
+    background-color: var(--light-grey);
   }
 }
 

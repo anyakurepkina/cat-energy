@@ -8,6 +8,10 @@
     margin-top: 40px;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
+  }
 }
 
 .preview__background {
@@ -69,6 +73,7 @@
     max-width: 100%;
     margin-left: 190px;
     padding-top: 140px;
+    padding-left: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -101,6 +106,8 @@
     grid-column: 2 / 3;
     transform: translateX(-46px);
     z-index: 1;
+    bottom: 0;
+    left: -47px;
   }
 }
 
