@@ -8,32 +8,34 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <img
-        class="logo--mobile"
-        src="/img/logo-mobile.svg"
-        width="34"
-        height="38"
-        alt="Логотип Cat Energy."
-      />
-      <img
-        class="logo--mobile"
-        src="/img/footer-logo.svg"
-        width="128"
-        height="24"
-        alt="Логотип Cat Energy."
-      />
-      <a class="page-header__link">
+      <div class="page-header__wrapper">
         <img
-          class="page-header__logo"
-          src="/img/logo-desktop.svg"
-          width="202"
-          height="59"
-          alt="Функциональное питание для котов Cat Energy"
+          class="logo--mobile"
+          src="/img/logo-mobile.svg"
+          width="34"
+          height="38"
+          alt="Логотип Cat Energy."
         />
-      </a>
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Переключить меню</span>
-      </button>
+        <img
+          class="logo--mobile"
+          src="/img/footer-logo.svg"
+          width="128"
+          height="24"
+          alt="Логотип Cat Energy."
+        />
+        <a class="page-header__link">
+          <img
+            class="page-header__logo"
+            src="/img/logo-desktop.svg"
+            width="202"
+            height="59"
+            alt="Функциональное питание для котов Cat Energy"
+          />
+        </a>
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Переключить меню</span>
+        </button>
+      </div>
       <nav class="navigation">
         <ul class="navigation-list">
           <li>
@@ -374,5 +376,14 @@
         </a>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector(".navigation");
+      var navToggle = document.querySelector(".navigation__toggle");
+
+      navToggle.addEventListener("click", function () {
+        navToggle.classList.toggle("navigation__toggle--active");
+        navMain.classList.toggle("navigation--active");
+      });
+    </script>
   </body>
 </html>
